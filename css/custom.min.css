@@ -1,0 +1,216 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&amp;display=swap");
+
+:root {
+    --pink: #ff9999;
+    --blue: #99ccff;
+    --white: #fff;
+    --black: #000;
+    --yellow: #fdff8c;
+    --green: #9bff99;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    overflow-x: hidden;
+    min-height: 100vh;
+    width: 100%;
+    margin: 0;
+    background: #202e38;
+    font-family: "Roboto Mono", monospace;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h1,
+h2 {
+    margin: 0;
+    text-align: center;
+    position: relative;
+    top: 20px;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+h2 {
+    font-size: 15px;
+}
+
+.symbology {
+    width: 50%;
+    margin: 1rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem 0;
+}
+
+.category {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    gap: 1rem;
+}
+
+.item {
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+}
+
+.text {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    display: block;
+}
+
+.periodic-table {
+    width: 80%;
+    margin: 1rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 1rem;
+}
+
+.element {
+    width: 50PX;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.number {
+    text-align: right;
+    font-size: 8px;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.symbol {
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    /* padding-left: 5px; */
+}
+
+.name {
+    font-size: 10px;
+    font-weight: bold;
+    text-transform: capitalize;
+    padding-left: 5px;
+}
+
+.capital-letter {
+    text-transform: uppercase;
+}
+
+.imperative {
+    border: 3px solid var(--black);
+    color: var(--black);
+    background-color: #ff9999;
+}
+
+.multi-paradigm {
+    border: 3px solid var(--black);
+    color: var(--black);
+    background-color: var(--green);
+}
+
+
+.scripting {
+    border: 3px solid var(--black);
+    color: var(--black);
+    background-color: var(--blue);
+}
+
+.functional {
+    border: 3px solid var(--black);
+    color: var(--black);
+    background-color: var(--yellow)
+}
+
+.element:hover {
+    transform: scale(1.1);
+    color: var(--black);
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+
+.imperative:hover {
+    background: var(--white);
+}
+
+.functional:hover {
+    background: var(--white);
+}
+
+.scripting:hover {
+    background: var(--white);
+}
+
+.group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.alkali .item{
+    background-color: #00758c;
+}
+
+.alkaline .item{
+    background-color: #d60024;
+}
+
+.transition .item{
+    background-color: #6232ec;
+}
+
+.postTransition .item{
+    background-color: #227754;
+}
+
+.metalloids .item{
+    background-color: #945700;
+}
+
+.reactive .item{
+    background-color: #0060f0;
+}
+
+.noble .item{
+    background-color: #cd1d5e;
+}
+
+.lantha .item{
+    background-color: #003355;
+}
+
+.actinides .item{
+    background-color: #c73200;
+}
+
+.unknown .item{
+    background-color: #3f374f;
+}
